@@ -31,7 +31,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 리소스 태그 검색 화면은 다음과 같이 구성되어 있습니다.
 
-![resourcewatcher_11](https://static.toastoven.net/prod_resource_watcher/img11_KO.png)
+![resourcewatcher_11](https://static.toastoven.net/prod_resource_watcher/img11_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -44,7 +44,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 **리소스 태그별 리소스 목록 조회**를 누르면 화면 하단에 다음과 같이 리소스 목록을 표시합니다.
 
-![resourcewatcher_12](https://static.toastoven.net/prod_resource_watcher/img12_KO.png)
+![resourcewatcher_12](https://static.toastoven.net/prod_resource_watcher/img12_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -59,7 +59,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 리소스 태그를 생성하려면 리소스 태그 검색 화면에서 **+ 리소스 태그 생성**을 누릅니다.
 
-![resourcewatcher_13](https://static.toastoven.net/prod_resource_watcher/img13_KO.png)
+![resourcewatcher_13](https://static.toastoven.net/prod_resource_watcher/img13_1_KO.png)
 
 리소스 태그 생성 화면에서 추가할 태그 이름을 입력하고 **확인**을 누르면 리소스 태그가 생성됩니다.
 동일한 리소스 태그가 이미 존재하는 경우 추가로 생성되지 않습니다.
@@ -81,7 +81,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 - 리소스 그룹 생성 시 **리소스 선택**을 리소스 태그로 설정하고 해당 태그를 대상 항목으로 설정한 경우 리소스 그룹에서도 태그 항목이 제거됩니다.
 - 알림 생성 시 **대상 리소스**를 **리소스 태그 선택**으로 설정하고 해당 태그가 설정되었을 경우, 알림 대상에서도 태그 항목이 제거됩니다.
 
-![resourcewatcher_14](https://static.toastoven.net/prod_resource_watcher/img14_KO.png)
+![resourcewatcher_14](https://static.toastoven.net/prod_resource_watcher/img14_1_KO.png)
 
 
 
@@ -103,7 +103,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 리소스 그룹 검색 화면은 다음과 같이 구성되어 있습니다.
 
-![resourcewatcher_01](https://static.toastoven.net/prod_resource_watcher/img01_KO.png)
+![resourcewatcher_01](https://static.toastoven.net/prod_resource_watcher/img01_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -116,7 +116,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 **리소스 그룹별 리소스 목록 조회**를 누르면 화면 하단에 다음과 같이 리소스 목록을 표시합니다.
 
-![resourcewatcher_02](https://static.toastoven.net/prod_resource_watcher/img02_KO.png)
+![resourcewatcher_02](https://static.toastoven.net/prod_resource_watcher/img02_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -128,7 +128,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 리소스 그룹을 생성하려면 리소스 그룹 검색 화면에서 **리소스 그룹 생성**을 클릭합니다.
 
-![resourcewatcher_03](https://static.toastoven.net/prod_resource_watcher/img03_KO.png)
+![resourcewatcher_03](https://static.toastoven.net/prod_resource_watcher/img03_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -140,7 +140,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 **생성** 탭에서 **리소스 선택** 방식을 지정하면 **리소스 미리 보기** 탭에서 선택한 리소스 목록을 확인할 수 있습니다.
 
-![resourcewatcher_04](https://static.toastoven.net/prod_resource_watcher/img04_KO.png)
+![resourcewatcher_04](https://static.toastoven.net/prod_resource_watcher/img04_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -158,7 +158,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 리소스 그룹 검색 화면의 리소스 그룹 목록에서 삭제할 항목의 체크 박스를 선택해 삭제할 수 있습니다.
 여러 항목을 한 번에 삭제할 수도 있습니다.
 
-![resourcewatcher_05](https://static.toastoven.net/prod_resource_watcher/img05_KO.png)
+![resourcewatcher_05](https://static.toastoven.net/prod_resource_watcher/img05_1_KO.png)
 
 
 ### 알림
@@ -178,7 +178,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 알림 검색 화면은 다음과 같이 구성되어 있습니다.
 
-![resourcewatcher_31](https://static.toastoven.net/prod_resource_watcher/img31_KO.png)
+![resourcewatcher_31](https://static.toastoven.net/prod_resource_watcher/img31_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -192,7 +192,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 **보기**를 누르면 화면 하단에 다음과 같이 알림 이력과 알림 대상 리소스 목록을 표시합니다.
 
-![resourcewatcher_32](https://static.toastoven.net/prod_resource_watcher/img32_KO.png)
+![resourcewatcher_32](https://static.toastoven.net/prod_resource_watcher/img32_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -207,7 +207,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 **리소스 목록 조회** 탭을 누르면 화면 하단에 알림 대상 리소스 목록을 표시합니다.
 
-![resourcewatcher_33](https://static.toastoven.net/prod_resource_watcher/img33_KO.png)
+![resourcewatcher_33](https://static.toastoven.net/prod_resource_watcher/img33_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -218,7 +218,7 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 
 알림을 생성하려면 알림 검색 화면에서 **알림 생성**을 누릅니다.
 
-![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_KO.png)
+![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -240,13 +240,13 @@ Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비�
 알림의 이름, 설명 및 대상 리소스, 알림 수신 대상 또는 웹훅 설정을 변경할 수 있습니다.
 - 알림 규칙은 변경할 수 없습니다.
 - 목록에서 이미 생성된 알림 설정을 수정하고 **추가**를 클릭할 경우 수정한 값으로 반영합니다.
-    - 예시: Email만 선택하여 값이 저장되어 있는 경우 목록에서 SMS를 선택하여 **추가**를 누르면 해당 값으로 업데이트합니다.
+  - 예시: Email만 선택하여 값이 저장되어 있는 경우 목록에서 SMS를 선택하여 **추가**를 누르면 해당 값으로 업데이트합니다.
 
 #### 알림 삭제
 
 알림 검색 화면의 알림 목록에서 삭제할 항목의 체크 박스를 선택해 삭제할 수 있습니다. 여러 항목을 한 번에 삭제할 수도 있습니다.
 
-![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_KO.png)
+![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_1_KO.png)
 
 > 알림을 삭제하면 더 이상 알림을 수신하지 않게 됩니다.  
 > 해당 알림에서 발생했던 알림 이력 정보가 함께 삭제되어 복구할 수 없게 됩니다.
@@ -286,7 +286,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 
 리소스 검색 화면은 다음과 같이 구성되어 있습니다.
 
-![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_KO.png)
+![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -304,7 +304,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 
 **보기**를 누르면 화면 하단에 다음과 같이 리소스의 기본 정보와 이벤트 목록을 표시합니다.
 
-![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_KO.png)
+![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -313,7 +313,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 
 **이벤트 조회** 탭을 누르면 화면 하단에 리소스에서 발생한 이벤트 목록을 표시합니다.
 
-![resourcewatcher_43](https://static.toastoven.net/prod_resource_watcher/img43_KO.png)
+![resourcewatcher_43](https://static.toastoven.net/prod_resource_watcher/img43_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
@@ -325,7 +325,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 
 리소스에 리소스 태그를 설정하려면 리소스 검색 화면에서 **리소스 태그 설정**을 클릭합니다.
 
-![resourcewatcher_45](https://static.toastoven.net/prod_resource_watcher/img45_KO.png)
+![resourcewatcher_45](https://static.toastoven.net/prod_resource_watcher/img45_1_KO.png)
 
 | 항목 | 설명 |
 |---|---|
