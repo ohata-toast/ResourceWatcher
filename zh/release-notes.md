@@ -1,4 +1,4 @@
-### 2022. 12. 13.
-#### 기능 추가
+### December 13, 2022
+#### Added Features
 
-* Resource Watcher 서비스 출시
+* Resource Watcher service released
