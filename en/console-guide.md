@@ -31,7 +31,7 @@ Resource tags can be created and set to resources by the user, and can also be s
 
 Search resource tag consists of as follows. 
 
-![resourcewatcher_11](https://static.toastoven.net/prod_resource_watcher/img11_1_KO.png)
+![resourcewatcher_11](https://static.toastoven.net/prod_resource_watcher/img11_EN.png)
 
 | Items | Description |
 |---|---|
@@ -44,7 +44,7 @@ Search resource tag consists of as follows.
 
 Click **View Resource list by resource tag** to display a list of resources at the bottom of screen as follows
 
-![resourcewatcher_12](https://static.toastoven.net/prod_resource_watcher/img12_1_KO.png)
+![resourcewatcher_12](https://static.toastoven.net/prod_resource_watcher/img12_EN.png)
 
 | Items | Description |
 |---|---|
@@ -59,7 +59,7 @@ Click **View Resource list by resource tag** to display a list of resources at t
 
 To create resource tag, press **+ Create resource tag** on Search resource tag screen.
 
-![resourcewatcher_13](https://static.toastoven.net/prod_resource_watcher/img13_1_KO.png)
+![resourcewatcher_13](https://static.toastoven.net/prod_resource_watcher/img13_EN.png)
 
 On Create resource tag screen, enter the tag name you want to add and press **Confirm** to create resource tag. 
 If the same resource tag already existed, it will not be created additionally.
@@ -81,7 +81,7 @@ Precautions for deleting resource tags are as follows.
 - If **Select Resource** is set as resource tag and the tag is set as Target item when creating a resource group, the tag entry is also removed from the resource group.
 - When creating notifications, if **Target Resource** is set to **Select resource tag** and the corresponding tag is set, the tag entry is also removed from the notification target.
 
-![resourcewatcher_14](https://static.toastoven.net/prod_resource_watcher/img14_1_KO.png)
+![resourcewatcher_14](https://static.toastoven.net/prod_resource_watcher/img14_EN.png)
 
 
 
@@ -103,7 +103,7 @@ You can create resource groups by specifying one of the resource group creation 
 
 Search Resource Group screen consists of the following.
 
-![resourcewatcher_01](https://static.toastoven.net/prod_resource_watcher/img01_1_KO.png)
+![resourcewatcher_01](https://static.toastoven.net/prod_resource_watcher/img01_EN.png)
 
 | Items | Description |
 |---|---|
@@ -116,7 +116,7 @@ Search Resource Group screen consists of the following.
 
 Click **View Resource List by resource group** to display the list of resources at the bottom of the screen as follows
 
-![resourcewatcher_02](https://static.toastoven.net/prod_resource_watcher/img02_1_KO.png)
+![resourcewatcher_02](https://static.toastoven.net/prod_resource_watcher/img02_EN.png)
 
 | Items | Description |
 |---|---|
@@ -128,7 +128,7 @@ Click **View Resource List by resource group** to display the list of resources 
 
 To create a resource group, on Search resource group screen, click **Create Resource Group**.
 
-![resourcewatcher_03](https://static.toastoven.net/prod_resource_watcher/img03_1_KO.png)
+![resourcewatcher_03](https://static.toastoven.net/prod_resource_watcher/img03_EN.png)
 
 | Items | Description |
 |---|---|
@@ -140,7 +140,7 @@ To create a resource group, on Search resource group screen, click **Create Reso
 
 If you specify **Select Resources** method on **Create** tab, you can view the list of selected Resources on ** Preview Resource ** tab.
 
-![resourcewatcher_04](https://static.toastoven.net/prod_resource_watcher/img04_1_KO.png)
+![resourcewatcher_04](https://static.toastoven.net/prod_resource_watcher/img04_EN.png)
 
 | Items | Description |
 |---|---|
@@ -158,7 +158,7 @@ You can modify it the same way created resource group.
 You can delete an item by selecting the check box for the item you want to delete from resource groups list on the Search Resource Group screen. 
 You can also delete multiple items at once.
 
-![resourcewatcher_05](https://static.toastoven.net/prod_resource_watcher/img05_1_KO.png)
+![resourcewatcher_05](https://static.toastoven.net/prod_resource_watcher/img05_EN.png)
 
 
 ### Notification
@@ -178,7 +178,7 @@ When creating notification, select notification rule and specify target resource
 
 Search Notifications screen consists of the following. 
 
-![resourcewatcher_31](https://static.toastoven.net/prod_resource_watcher/img31_1_KO.png)
+![resourcewatcher_31](https://static.toastoven.net/prod_resource_watcher/img31_EN.png)
 
 | Items | Description |
 |---|---|
@@ -192,7 +192,7 @@ Search Notifications screen consists of the following.
 
 Click **View** to view notification history and target Resource information for that notification at the bottom of screen.
 
-![resourcewatcher_32](https://static.toastoven.net/prod_resource_watcher/img32_1_KO.png)
+![resourcewatcher_32](https://static.toastoven.net/prod_resource_watcher/img32_EN.png)
 
 | Items | Description |
 |---|---|
@@ -207,7 +207,7 @@ Click **View** to view notification history and target Resource information for 
 
 Click **View Resource List** tab to display list of Resources to be notified at the bottom of screen.
 
-![resourcewatcher_33](https://static.toastoven.net/prod_resource_watcher/img33_1_KO.png)
+![resourcewatcher_33](https://static.toastoven.net/prod_resource_watcher/img33_EN.png)
 
 | Items | Description |
 |---|---|
@@ -218,7 +218,7 @@ Click **View Resource List** tab to display list of Resources to be notified at 
 
 To Create notifications, press ** Create notifications** on Search Notifications screen.
 
-![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_1_KO.png)
+![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_EN.png)
 
 | Items | Description |
 |---|---|
@@ -246,7 +246,7 @@ You can change name, description, target resource of the notification, notificat
 
 You can delete item by selecting check box for the item you want to delete from notification list on Search Notification screen. You can also delete multiple items at once.
 
-![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_1_KO.png)
+![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_EN.png)
 
 > If delete an alert, you will no longer receive notification.  
 > Notification history information that occurred in that notification will be deleted together and cannot be recovered. 
@@ -286,7 +286,7 @@ Resource consists of following information.
 
 Search Resource screen consists of as follows.
 
-![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_1_KO.png)
+![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_EN.png)
 
 | Items | Description |
 |---|---|
@@ -305,7 +305,7 @@ When creating a resource, it is exposed to the list, and when you delete the res
 
 Press **View** to display list of basic information and events for Resource at the bottom of screen as follows. 
 
-![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_1_KO.png)
+![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_EN.png)
 
 | Items | Description |
 |---|---|
@@ -314,7 +314,7 @@ Press **View** to display list of basic information and events for Resource at t
 
 Click **Event Query** tab to display list of events that occurred in Resource at the bottom of screen.
 
-![resourcewatcher_43](https://static.toastoven.net/prod_resource_watcher/img43_1_KO.png)
+![resourcewatcher_43](https://static.toastoven.net/prod_resource_watcher/img43_EN.png)
 
 | Items | Description |
 |---|---|
@@ -325,7 +325,7 @@ Click **Event Query** tab to display list of events that occurred in Resource at
 
 To set resource tags for Resource, click **Set resource tags** on Search Resource screen.
 
-![resourcewatcher_45](https://static.toastoven.net/prod_resource_watcher/img45_1_KO.png)
+![resourcewatcher_45](https://static.toastoven.net/prod_resource_watcher/img45_EN.png)
 
 | Items | Description |
 |---|---|

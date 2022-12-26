@@ -1,339 +1,339 @@
-## Governance & Audit > Resource Watcher > 콘솔 사용 가이드
+## Governance & Audit > Resource Watcher > Console Guide
 
-### 시작하기
+### Getting Started
 
-Resource Watcher는 조직을 활성화하면 기본으로 제공되는 서비스입니다.
-따라서 조직을 생성한 뒤 별도의 작업 없이 **서비스 선택**에서 **Resource Watcher**를 선택해 사용할 수 있습니다.
+Resource Watcher is a service provided by default when an organization is activated.
+Therefore, after creating an organization, you can use the service by selecting **Resource Watcher** from **Select Service** without any additional action.
 
-리소스에서 발생하는 다양한 변경 사항에 대한 알림을 받으려면
-먼저 리소스 그룹이나 리소스 태그를 정의한 뒤 알림을 생성하는 순서로 설정해야 합니다.
-알림을 설정한 이후 생성되거나 변경된 리소스에 대한 알림을 받을 수 있습니다.
+To be notified of various changes that occur in resources,
+you have to first define a resource group or resource tag before creating notifications.
+You can receive notifications on resources that have been created or changed after setting notifications.
 
 
-### 리소스 태그
+### Resource Tag
 
-리소스 태그를 자유롭게 설정하여 리소스를 구분해 관리할 수 있습니다.
+You can manage resources by setting resource tags freely.
 
-리소스 태그의 이름을 변경하면 리소스에 설정되었던 태그도 포함하여 함께 변경할 수 있습니다. 태그 이름 수정 후 리소스에 설정한 태그를 변경하는 작업을 자동으로 처리하여 편의성과 일관성을 제공합니다.
-리소스에는 하나 이상의 리소스 태그를 설정할 수 있으며, 리소스 태그는 하나 이상의 리소스에 설정할 수 있습니다.
-리소스 태그를 기반으로 리소스 그룹과 알림에서 대상 리소스 선택에 활용할 수 있습니다.
+If you change resource tag names, you can also change tags that are already set on the resource. Resource Watcher automatically changes tags that are set on resources after modifying tag names for convenience and consistency.
+You can set more than one resource tags for a resource, and a resource tag ca be set for more than one resources.
+By using resource tags, you can select target resources from resource groups and notifications.
 
-리소스 태그는 사용자가 직접 생성하여 리소스에 설정할 수 있으며, 또한 시스템에 의해 자동으로 리소스에 설정될 수 있습니다.
+Resource tags can be created and set to resources by the user, and can also be set to resources automatically.
 
-| 리소스 태그 구분 | 설명 |
+| Resource Tag Type | Description |
 |---|---|
-| 사용자 유형 | <li>사용자가 생성한 리소스 태그입니다.</li><li>리소스 태그의 이름을 변경할 수 있습니다.</li><li>리소스에 자유롭게 리소스 태그를 설정하거나 해제할 수 있습니다.</li>  |
-| 시스템 유형 | <li>시스템에서 생성한 리소스 태그입니다.</li><li>리소스가 생성될 때 시스템에 의해 자동으로 리소스 태그가 설정됩니다.</li><li>사용자는 리소스에 시스템 유형의 리소스 태그를 설정하거나 해제할 수 없습니다.</li> |
+| User Type | <li>Resource tag created by the user.</li><li>You can change the resource tag name. </li><li>You can freely set or release resource tags.</li>  |
+| System Type | <li>Resource tag created by system. </li><li>When a resource is created, the resource tag is set automatically by the system.</li><li>Users cannot set or release system type resource tags.</li> |
 
-> 시스템 유형의 리소스 태그는 현재 프로젝트 이름의 태그를 지원할 예정으로 각 리소스의 프로젝트 정보를 태그로 관리할 수 있습니다. 시스템 유형 리소스 태그는 앞으로도 지속적으로 추가할 계획입니다.
+> Resource tags in system type is going to support Tags in current project name, allowing to manage project information for each Resource as Tags. We plan to continue to add system type resource tags.
 
-#### 리소스 태그 검색
+#### Search resource tag
 
-리소스 태그 검색 화면은 다음과 같이 구성되어 있습니다.
+Search resource tag consists of as follows.
 
 ![resourcewatcher_11](https://static.toastoven.net/prod_resource_watcher/img11_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 태그 검색 조건 | 다음과 같은 검색 조건을 지정하여 해당하는 리소스 태그 목록을 검색할 수 있습니다.<li>리소스 태그 구분: USER (사용자 유형), SYSTEM (시스템 유형)</li><li>리소스 태그 키: 입력한 이름을 포함하는 리소스 태그 선택</li><li>최종 수정 일시: 마지막으로 수정된 기간의 리소스 태그 선택 |
-| 리소스 태그 생성 및 삭제 | 새로운 리소스 태그를 추가하거나 목록에 표시된 리소스 태그를 선택하여 삭제할 수 있습니다. |
-| 리소스 태그 전체 선택 | 화면에 표시된 모든 리소스 태그를 선택하거나, 선택을 해제합니다. |
-| 리소스 태그 항목 표시 | 리소스 태그의 이름, 구분, 최종 수정 일시 정보를 화면에 표시합니다. 각각의 리소스 태그를 선택하여 삭제할 수 있습니다. |
-| 리소스 태그별 리소스 목록 조회 | 리소스 태그가 설정되어 있는 리소스 목록을 조회할 수 있습니다. |
-| 수정 | 리소스 태그의 이름을 변경할 수 있습니다. |
+| Resource Tag Search Conditions | You can search for list of appropriate resource tags by specifying the following search criteria:<li>Resource Tag Separation: USER (User Type), SYSTEM (System Type)</li><li>Resource Tag Key: Select resource tag that contains the name entered</li><li>Last Modified Date: Select resource tag for Last Modified Period |
+| Create and Delete Resource Tags | You can add new resource tag or select resource tag that appears in the list to delete it. |
+| Select Whole Resource Tag | Select or deselect all resource tags displayed on the screen. |
+| Display Resource Tag Item | Displays name, classification, and last modified date and time information of resource tag on screen. You can select and delete each resource tag. |
+| Query Resource list by resource tag | You can view list of Resources that sets resource tags. |
+| Modify  | You can change resource tag name.  |
 
-**리소스 태그별 리소스 목록 조회**를 누르면 화면 하단에 다음과 같이 리소스 목록을 표시합니다.
+Click **View Resource list by resource tag** to display a list of resources at the bottom of screen as follows
 
 ![resourcewatcher_12](https://static.toastoven.net/prod_resource_watcher/img12_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 태그 이름 | 선택한 태그의 이름을 표시합니다. |
-| 리소스 검색 조건 | 다음과 같은 검색 조건으로 리소스 태그에 포함된 리소스의 목록을 검색할 수 있습니다.<li>프로젝트명: 리소스가 생성된 프로젝트의 목록을 표시합니다.</li><li>서비스: 해당 조직에서 사용 중인 서비스 목록을 표시합니다.</li><li>리소스 유형: 사용 중인 NHN Cloud 서비스에서 제공하는 리소스 유형 목록을 표시합니다.</li><li>리전: 해당 조직에서 사용할 수 있는 리전 목록을 표시합니다.</li><li>리소스명: 입력한 검색어를 포함하는 리소스를 선택합니다.</li><li>리소스 생성 일시: 리소스가 생성된 기간을 지정합니다. |
-| 리소스 목록 | 선택한 리소스 태그 리소스 목록을 표시합니다. |
+| Tag Name | Display Selected Tag name.  |
+| Resource Search Condition | You can search for Resources list in resource tag with following search criteria<li>Project Name: Displays projects list that Resource was created.</li><li>Services: Displays list of service in use by the corresponding organization.</li><li>Resource Type: Displays list of Resource types provided by NHN Cloud service in use.</li><li>Region: Displays list of regions available to the corresponding organization.</li><li>Resource Name: Select Resource that contains the search term entered.</li><li>Resource creation date and time—Specifies the period the Resource was created. |
+| Resource List | Displays list of selected resource tag resources. |
 
-> 리소스 태그 검색 화면에서는 리소스 태그를 설정한 리소스 목록에 대한 조회만 제공합니다.
-> 리소스에 태그를 설정하는 기능은 **리소스** 메뉴에서 제공합니다.
+> Resource Tag Search screen only provides queries for the list of resources that have set up resource tag.
+> Features to set tags to resources is provided from **Resource** menu.
 
-#### 리소스 태그 생성
+#### Create Resource Tag
 
-리소스 태그를 생성하려면 리소스 태그 검색 화면에서 **+ 리소스 태그 생성**을 누릅니다.
+To create resource tag, press **+ Create resource tag** on Search resource tag screen.
 
 ![resourcewatcher_13](https://static.toastoven.net/prod_resource_watcher/img13_EN.png)
 
-리소스 태그 생성 화면에서 추가할 태그 이름을 입력하고 **확인**을 누르면 리소스 태그가 생성됩니다.
-동일한 리소스 태그가 이미 존재하는 경우 추가로 생성되지 않습니다.
+On Create resource tag screen, enter the tag name you want to add and press **Confirm** to create resource tag.
+If the same resource tag already existed, it will not be created additionally.
 
-#### 리소스 태그 수정
+#### Modify Resource Tag
 
-리소스 태그 검색 화면의 리소스 태그 목록에서 변경할 항목에 대해 **수정**을 누릅니다.
-태그 이름을 수정한 뒤 **확인**을 눌러 변경 사항을 반영합니다.
+In resource tags list from Search resource tags screen, , press **Modify** for the item want to change.
+Modify tag name and press **Confirm** to reflect the changes.
 
-> 리소스 태그 수정 시 해당 태그가 설정된 리소스의 태그 설정값이 함께 변경됩니다.
+> When modifying resource tag, tag settings for resource on which the corresponding tag is set are also to be changed.
 
-#### 리소스 태그 삭제
+#### Delete Resource Tag
 
-리소스 태그 검색 화면의 리소스 태그 목록에서 삭제할 항목의 체크 박스를 선택해 삭제할 수 있습니다.
-여러 항목을 한 번에 삭제할 수도 있습니다.
+On Search resource tag screen, you can delete an item by selecting the check box want to delete from resource tag list.  
+You can also delete multiple items at once.
 
-리소스 태그 삭제 시 주의 사항은 아래와 같습니다.
-- 리소스 태그를 삭제하면 해당 태그가 설정된 모든 리소스에서 태그 설정값이 함께 제거됩니다.
-- 리소스 그룹 생성 시 **리소스 선택**을 리소스 태그로 설정하고 해당 태그를 대상 항목으로 설정한 경우 리소스 그룹에서도 태그 항목이 제거됩니다.
-- 알림 생성 시 **대상 리소스**를 **리소스 태그 선택**으로 설정하고 해당 태그가 설정되었을 경우, 알림 대상에서도 태그 항목이 제거됩니다.
+Precautions for deleting resource tags are as follows.
+- Deleting resource tag removes tag settings values from all resources on which the corresponding tag is set.
+- If **Select Resource** is set as resource tag and the tag is set as Target item when creating a resource group, the tag entry is also removed from the resource group.
+- When creating notifications, if **Target Resource** is set to **Select resource tag** and the corresponding tag is set, the tag entry is also removed from the notification target.
 
 ![resourcewatcher_14](https://static.toastoven.net/prod_resource_watcher/img14_EN.png)
 
 
 
-### 리소스 그룹
+### Resource Group
 
-리소스 그룹을 다양한 방식으로 생성하여 리소스를 구분하여 관리할 수 있습니다.
-아래 표의 리소스 그룹 생성 방식 중 하나를 지정하여 리소스 그룹을 생성할 수 있습니다.
+You can create resource groups in different ways to separate and manage resources.
+You can create resource groups by specifying one of the resource group creation methods in the table below.
 
-| 리소스 그룹 생성 방식 | 설명 |
+| Resource Group Creation Method | Description |
 |---|---|
-| 리소스 유형 | <li>지정한 리소스의 유형과 일치하는 리소스를 리소스 그룹에 포함합니다.</li><li>리소스가 생성되면 리소스 유형과 일치하는 리소스 그룹에 리소스가 자동으로 추가됩니다.</li>  |
-| 리소스 태그 | <li>지정한 리소스 태그를 가지는 리소스를 리소스 그룹에 포함합니다.</li><li>리소스에 리소스 태그를 추가하면 동일한 태그를 기반으로 생성된 리소스 그룹에 리소스가 자동으로 추가됩니다.</li>  |
-| 리소스 직접 선택 | <li>리소스 그룹에 포함시킬 대상 리소스를 화면에서 선택하여 지정합니다.</li> |
+| Resource Type | <li>Include resources in resource group that matches the specified resource type.</li><li>When a resource is created, the resource is automatically added to the resource group that matches the resource type.</li>  |
+| Resource Tag | <li>Include resources with specified resource tag in the resource group.</li><li>When added a resource tag to resource, the resource is automatically added to the resource group created based on the same tag.</li>  |
+| Select Resource Directly | <li>Select and specify target resources to include in the resource group on the screen.</li> |
 
-> 리소스는 하나 이상의 리소스 그룹에 포함하여 관리할 수 있습니다.
-> 리소스가 삭제되면 리소스 그룹에서 리소스가 자동으로 제거됩니다.
+> Resource can be included and managed in more than one resource groups.
+> When a resource is deleted, it is automatically removed from the resource group.
 
-#### 리소스 그룹 검색
+#### Search Resource Group
 
-리소스 그룹 검색 화면은 다음과 같이 구성되어 있습니다.
+Search Resource Group screen consists of the following.
 
 ![resourcewatcher_01](https://static.toastoven.net/prod_resource_watcher/img01_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 그룹 검색 조건 | 다음과 같은 검색 조건을 지정하여 해당하는 리소스 그룹을 검색할 수 있습니다.<li>리소스 그룹 생성 유형</li><li>리소스 그룹명/리소스 그룹 설명: 입력한 검색어를 포함하는 리소스 그룹 선택</li><li>최종 수정 일시: 마지막으로 수정된 기간의 리소스 그룹 선택 |
-| 리소스 그룹 생성 및 삭제 | 새로운 리소스 그룹을 추가하거나 목록에 표시된 리소스 그룹을 선택하여 삭제할 수 있습니다. |
-| 리소스 그룹 전체 선택 | 화면에 표시된 모든 리소스 그룹을 선택하거나 해제합니다. |
-| 리소스 그룹 항목 표시 | 리소스 그룹의 이름, 설명, 생성 유형, 최종 수정 일시 정보를 화면에 표시합니다. 각각의 리소스 그룹을 선택하여 삭제할 수 있습니다. |
-| 리소스 그룹별 리소스 목록 조회 | 리소스 그룹에 포함되어 있는 리소스 목록을 조회할 수 있습니다. |
-| 수정 | 리소스 그룹의 설정을 변경할 수 있습니다. |
+| Resource Group Search Conditions | You can search for appropriate resource groups by specifying following search criteria.<li>Resource Group Creation Type</li><li>Resource Group Name/Resource Group Description: Select a resource group that contains the search term entered</li><li>Last Modified Date: Select a resource group for Last Modified Period |
+| Create and Delete Resource Group | You can add new resource group or select the resource group that appears in the list to delete it.  |
+| Select The Whole Resource Group | Select or deselect all resource groups displayed on the screen. |
+| Display Resource Group Items | Displays name, description, creation type, last modified date and time information of resource group on screen. You can select and delete each resource group. |
+| Resource List Query for each Resource Group | You can view the resource lists that are included in resource group. |
+| Modify  | You can modify resource group settings. |
 
-**리소스 그룹별 리소스 목록 조회**를 누르면 화면 하단에 다음과 같이 리소스 목록을 표시합니다.
+Click **View Resource List by resource group** to display the list of resources at the bottom of the screen as follows
 
 ![resourcewatcher_02](https://static.toastoven.net/prod_resource_watcher/img02_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 검색 조건 | 다음과 같은 검색 조건으로 리소스 그룹에 포함된 리소스의 목록을 검색할 수 있습니다.<li>프로젝트명: 리소스가 생성된 프로젝트의 목록을 표시합니다.</li><li>서비스: 해당 조직에서 사용 중인 서비스 목록을 표시합니다.</li><li>리소스 유형: 사용 중인 NHN Cloud 서비스에서 제공하는 리소스 유형 목록을 표시합니다.</li><li>리전: 해당 조직에서 사용할 수 있는 리전 목록을 표시합니다.</li><li>리소스명: 입력한 검색어를 포함하는 리소스를 선택합니다.</li><li>리소스 생성 일시: 리소스가 생성된 기간을 지정합니다. |
-| 리소스 목록 | 선택한 리소스 그룹에 포함된 리소스 목록을 표시합니다. |
+| Resource Search Condition | You can search for list of resources in the  resource group with the following Search criteria:<li>Project Name: Displays projects list that resource was created.</li><li>Services: Displays list of service in use by the corresponding organization.</li><li>Resource Type: Displays list of Resource types provided by NHN Cloud service in use.</li><li>Region: Displays list of regions available to the corresponding organization.</li><li>Resource Name: Select Resource that contains the search term entered.</li><li>Resource creation date and time—Specifies the period the Resource was created. |
+| Resource List | Displays list of Resources included in the selected resource group. |
 
 
-#### 리소스 그룹 생성
+#### Create Resource Group
 
-리소스 그룹을 생성하려면 리소스 그룹 검색 화면에서 **리소스 그룹 생성**을 클릭합니다.
+To create a resource group, on Search resource group screen, click **Create Resource Group**.
 
 ![resourcewatcher_03](https://static.toastoven.net/prod_resource_watcher/img03_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 생성 | 리소스 그룹의 기본 정보 및 생성 방식을 지정합니다. |
-| 리소스 미리 보기 | **생성** 탭에서 설정한 생성 방식에 의해 리소스 그룹에 포함되는 리소스의 목록을 조회합니다. |
-| 리소스 선택 | 리소스 그룹이 리소스를 포함하는 방식에 대해서 지정합니다. **리소스 유형**, **리소스 태그**, **리소스 직접 선택** 중 하나를 지정하고 대상 항목을 선택할 수 있습니다. |
-| 선택된 항목 표시 | 선택 가능한 항목에서 사용자가 지정한 항목들을 표시합니다. 이름 우측의 [X] 버튼을 누르면 선택된 항목에서 제거할 수 있습니다. |
-| 선택 가능한 항목 표시 | 리소스 선택 방식에 따라 설정 가능한 항목을 목록으로 표시합니다. **리소스 유형**과 **리소스 태그**는 검색어로 필터링할 수 있습니다. |
+| Create | Specifies basic information and creation method for resource groups. |
+| Preview Resource | View the list of Resources in resource group by the creation method set on the **Create** tab. |
+| Select Resource | Specifie how a resource group includes Resources. You can specify one out of **Resource type**, **resource tag**, or **Select resource directly** and select target items. |
+| Display Selected Items | Displays the items that user specified in the selectable items. You can remove it from the selected item by pressing [X] button to the right of name. |
+| Display Selectable Items | Display List of items that can be set according to how the Resource is selected. **Resource types** and **resource tags** can be filtered by Search terms. |
 
-**생성** 탭에서 **리소스 선택** 방식을 지정하면 **리소스 미리 보기** 탭에서 선택한 리소스 목록을 확인할 수 있습니다.
+If you specify **Select Resources** method on **Create** tab, you can view the list of selected Resources on ** Preview Resource ** tab.
 
 ![resourcewatcher_04](https://static.toastoven.net/prod_resource_watcher/img04_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 목록 | 리소스 그룹 생성 방식에 의해 선택한 리소스 목록을 표시합니다. |
-| 리소스 검색 조건 | 리소스 목록을 필터링할 수 있습니다. |
+| Resource List | Displays list of resources selected by resource group creation method. |
+| Resource Search Condition | You can filter the list of Resources. |
 
 
-#### 리소스 그룹 수정
+#### Modify Resource Group
 
-리소스 그룹의 이름, 설명 및 리소스 생성 유형을 변경할 수 있습니다.
-리소스 그룹 생성과 동일한 방식으로 수정할 수 있습니다.
+You can change name, description, Resource creation type of resource group.
+You can modify it the same way created resource group.
 
-#### 리소스 그룹 삭제
+#### Delete Resource Group
 
-리소스 그룹 검색 화면의 리소스 그룹 목록에서 삭제할 항목의 체크 박스를 선택해 삭제할 수 있습니다.
-여러 항목을 한 번에 삭제할 수도 있습니다.
+You can delete an item by selecting the check box for the item you want to delete from resource groups list on the Search Resource Group screen.
+You can also delete multiple items at once.
 
 ![resourcewatcher_05](https://static.toastoven.net/prod_resource_watcher/img05_EN.png)
 
 
-### 알림
+### Notification
 
-관심 대상 리소스의 변경 사항을 감지하고 조건에 따라 Email, SMS, Webhook 등의 알림을 발송하며, 발송된 알림의 이력을 관리할 수 있습니다.
+You can detect changes in resources of interest, send notifications including email, SMS, and Webhook based on conditions, and manage history of notifications sent.
 
-알림의 대상 리소스는 리소스 그룹이나 리소스 태그를 이용하여 설정할 수 있습니다.
-따라서 알림을 생성하기에 앞서 리소스 그룹이나 리소스 태그를 생성해야 합니다. 알림 대상 선택 시 이미 다른 알림에 사용했던 리소스 그룹이나 리소스 태그를 다시 지정해서 
-알림을 생성한 이후에 리소스가 추가되더라도 해당 리소스가 알림 생성 시 설정한 리소스 그룹이나 리소스 태그에 포함되면, 자동으로 알림의 대상에 포함됩니다.
+Target Resource for notification can be set using resource groups or resource tags.
+Therefore, you must create resource groups or resource tags before creating notifications.
+When selecting notification targets, if Resource is added after notification is created by re-tagging a resource group or resource tag that was already used for another notifications, it is automatically included in notifications once the corresponding Resource is included in a resource group or resource tag that have set when the notification was created.
 
-리소스의 변경 사항은 Resource Watcher 서비스에서 제공하는 알림 규칙으로 제공하고 있습니다.
-알림 규칙은 인스턴스의 생성이나 시작, 종료 등의 이벤트가 발생하는 경우 이를 감지할 수 있고,
-이벤트가 제공하는 상세한 정보를 검사하여 알림 규칙에서 설정한 조건을 만족하는지 판단할 수 있습니다.
-알림을 생성할 때 알림 규칙을 선택하고 대상 리소스를 지정하면, 해당 리소스에서 알림 규칙의 조건에 해당하는 이벤트가 발생했을 때 사용자에게 알림을 전송합니다. 
+Changes to Resources are updated by notification rules provided by Resource Watcher service.
+Notification rules can detect events such as creating, starting, or ending Instance,
+and can determine if it meets the conditions set in the notification rule by examining detailed information that event provides.
+When creating notification, select notification rule and specify target resource, the corresponding resource sends notification to user when event occurs that meets the condition of the notification rule.
 
-#### 알림 검색
+#### Search Notifications
 
-알림 검색 화면은 다음과 같이 구성되어 있습니다.
+Search Notifications screen consists of the following.
 
 ![resourcewatcher_31](https://static.toastoven.net/prod_resource_watcher/img31_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 알림 검색 조건 | 다음과 같은 검색 조건을 지정하여 해당하는 리소스를 검색할 수 있습니다.<li>알림 상태: 활성화, 비활성화 상태의 알림을 지정합니다.</li><li>알림 규칙: 알림 규칙에 해당하는 알림을 검색합니다. 알림 규칙은 여러 항목을 선택할 수 있습니다.</li><li>알림명/알림 설명 검색: 입력한 검색어를 포함하는 알림을 검색합니다.</li><li>알림 최종 수정 일시: 마지막으로 수정된 기간의 알림을 검색합니다.</li> |
-| 알림 생성, 알림 삭제 | 알림을 생성하거나 선택한 알림을 삭제합니다. |
-| 알림 전체 선택 | 화면에 표시된 모든 알림을 선택하거나 해제합니다. |
-| 알림 항목 표시 | 검색된 알림의 정보를 화면에 표시합니다. |
-| 알림 상태 변경 | 해당 알림의 상태를 토글 스위치 버튼으로 변경할 수 있습니다.<li>파란색은 알림이 활성화된 상태이며 알림 조건을 만족하는 이벤트 발생 시 알림을 전송합니다.</li><li>회색은 알림이 비활성화된 상태이며 이벤트가 발생하더라도 알림을 전송하지 않습니다.</li> |
-| 알림 상세보기 | **보기**를 눌러 해당 알림에 대한 알림 이력과 대상 리소스 정보를 확인할 수 있습니다. |
-| 알림 수정 | 알림의 이름과 설명, 대상 리소스와 알림 수신 대상을 수정할 수 있습니다. |
+| Search Notifications Condition | You can search for Resources by specifying the following search criteria.<li>Notification Status: Specifies notification of enabled, disabled status.</li><li>Notification Rules: Search notification rules that correspond to notification rules. Notification rules can select multiple items.</li><li>Search Notification Name/Notification Description: Search for Notifications that contain Search term entered.</li><li>Last Modified Date of Notification: Search notifications for the last modified period.</li> |
+| Create Notification, Delete Notification | Creates Notification or deletes the selected Notification. |
+| Select whole Notifications | Select or deselect whole Notifications displayed on screen.  |
+| Display Notification items.  | Displays information about Searched notifications on screen. |
+| Change Notification Status | You can change status of notification to toggle switch button.<li>Blue color indicates that notification is activated, and when an event occurs that meets the notification criteria, it sends notifications. </li><li>Gray color indicates that notification is disabled and does not send notifications when an event occurs.</li> |
+| View Notifications in Detail | Click **View** to view notification history and target Resource information for that notification. |
+| Modify Notifications | You can modify name and description of Notifications, target Resource, and recipient of the Notifications. |
 
-**보기**를 누르면 화면 하단에 다음과 같이 알림 이력과 알림 대상 리소스 목록을 표시합니다.
+Click **View** to view notification history and target Resource information for that notification at the bottom of screen.
 
 ![resourcewatcher_32](https://static.toastoven.net/prod_resource_watcher/img32_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 알림 이름 | 선택한 알림의 이름을 표시합니다. |
-| 알림 이력 조회, 리소스 목록 조회 | 알림 이력과 대상 리소스 정보를 확인할 수 있습니다. |
-| 알림 이력 검색 조건 | 알림 이력 목록을 필터링할 수 있습니다. |
-| 알림 이력 목록 | 검색된 알림 이력의 정보를 화면에 표시합니다. 알림 발생 일시와 알림이 발생한 리소스명, 프로젝트, 알림 발송 결과를 확인할 수 있습니다. |
+| Notification name | Displays the name of selected Notification. |
+| View Notification history, View Resource list | You can check notification history and target Resource information. |
+| Notification history Search condition | You can filter list of notification history.  |
+| list of notification history | Displays information about searched notification history on screen. You can check the date and time the notification occurred, Resource name where the notification occurred, project, and result of sending notification. |
 
-> 알림 이력의 발송 결과는 다음과 같습니다.   
-> - 성공: 알림 생성 시 설정한 알림 수신 대상으로 알림 전송에 대한 요청이 성공했습니다.
-> - 실패: 알림 수신 대상 중 일부 또는 전체에 대한 알림 전송 요청이 실패했습니다.
+> Results of notification history are as follows.
+> - Successful: Request to send notification to the notification recipient that you set when creating the notification was successful.
+> - Failed: Request to send notification to some or all of the recipients of notification failed.
 
-**리소스 목록 조회** 탭을 누르면 화면 하단에 알림 대상 리소스 목록을 표시합니다.
+Click **View Resource List** tab to display list of Resources to be notified at the bottom of screen.
 
 ![resourcewatcher_33](https://static.toastoven.net/prod_resource_watcher/img33_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 검색 조건 | 알림 대상 리소스 목록을 필터링할 수 있습니다. |
-| 리소스 목록 | 검색된 알림 대상 리소스 목록을 화면에 표시합니다.  |
+| Resource Search Condition | You can filter list of Resources to be notified. |
+| Resource List | Displays list of Searched notification target resources on screen.  |
 
-#### 알림 생성
+#### Create Notifications
 
-알림을 생성하려면 알림 검색 화면에서 **알림 생성**을 누릅니다.
+To Create notifications, press ** Create notifications** on Search Notifications screen.
 
 ![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 알림 생성 | **알림 생성**을 누르면 알림 정보를 입력할 수 있습니다. |
-| 알림 규칙 선택 | 알림을 받기 원하는 알림 규칙을 지정합니다. |
-| 대상 리소스 | 알림을 받기 원하는 관심 대상 리소스를 지정합니다.<li>**리소스 그룹**과 **리소스 태그**를 지정할 수 있습니다. **추가**를 누르면 선택됩니다.</li><li>여러 항목을 선택하면 각 항목에 설정된 모든 리소스들이 대상이 됩니다.</li><li>선택한 대상을 제거하려면 우측의 [X] 버튼을 누릅니다.</li> |
-| 알림 수신 대상 | 알림 전송 시 Email, SMS를 전달할 수신 대상을 설정합니다. 알림 수신 대상 유형은 다음과 같습니다.<li>조직 멤버: NHN Cloud 회원, IAM 회원을 직접 선택할 수 있습니다.</li><li>알림 수신 그룹: 조직의 알림 수신 그룹 목록에서 미리 정의된 수신 대상을 선택할 수 있습니다. 여러 알림에서 동일한 알림 수신자 설정이 필요하다면 **콘솔** > **조직** > **알림 수신 그룹 관리**에서 등록하여 사용할 것을 권장합니다.</li><li>역할: 선택한 역할을 가진 모든 멤버에게 알림을 전송합니다. 조직 역할, 프로젝트 역할, 프로젝트 공통 역할 그룹, 서비스 역할에서 선택할 수 있습니다.</li> |
-| 웹훅 | 알림 전송 시 WebHook 요청을 전달할 수 있습니다.<li>https 프로토콜을 지원합니다.</li><li>WebHook Payload Spec은 [콘솔 사용 가이드]를 참고하십시오.</li><li>비밀 키를 입력하면 HMAC 인증 정보를 헤더에 실어 전송합니다. [콘솔 사용 가이드]를 참고하십시오.</li> |
-| 확인 | 알림 생성에 필요한 알림 규칙, 대상 리소스, 알림 수신 대상 또는 웹훅을 모두 설정한 뒤 **확인**을 누르면 알림이 생성됩니다. |
+| Create notifications | Press ** Create notifications ** to enter notifications information. |
+| Select Notifications Rules  | Specify notifications rules that wants to get notified.  |
+| Target Resource | Specify Resources of interest that wants to get notified.<li>You can specify **Resource Group** and **Resource Tag**. Press **Add** to select it.</li><li>When multiple items are selected, all Resources set for each item are targeted.</li><li>Press [X] button on the right to remove the selected target.</li> |
+| Notifications Recipients Target | Set the recipient to forward email, SMS when sending notifications. Types of Notifications recipients are as follows.<li>Organization members: NHN Cloud membership, IAM membership can be selected by themselves.</li><li>Notifications Recipients Groups – Can select predefined recipients from the list of Notifications Recipients Groups in one’s organization. If multiple Notifications require the same notification recipient settings, we recommend that you register and use them in **Console**>**Organization**>** Notifications Recipients Groups Management**.</li><li>Role: Sends notifications to all members with the selected role. You can choose from organizational roles, project roles, project common role groups, and service roles.</li> |
+| WebHook | You can forward WebHook requests when sending notifications.<li>Supports https protocol. </li><li>For WebHook Payload Spec, refer to [Console Usage Guide].</li><li>When entered secret key, the HMAC credentials are sent to the header. Refer to [Console Usage Guide].</li> |
+| Confirm | Set all notifications rules, target resources, notifications recipients, or webhooks required to generate notifications, and press **OK** to generate notifications. |
 
-> 알림 수신 대상에서 `역할` 유형을 선택할 경우, 선택한 역할이 설정된 멤버에게만 알림이 전송됩니다.  
-> 예를 들어, `ADMIN` 역할을 선택했을 경우, `OWNER` 역할을 가진 멤버에게는 알림이 전송되지 않습니다.
-> 
-> 프로젝트 역할을 선택할 경우, 이벤트가 발생한 리소스가 속한 프로젝트의 멤버들 중 선택한 역할이 설정된 멤버에게만 알림이 전송됩니다.  
-> 예를 들어, 2개의 프로젝트가 생성되어 있고 ADMIN 멤버를 선택한 경우, 프로젝트A에서 생성된 리소스에서 알림이 발생하면 프로젝트A의 ADMIN 역할을 가진 프로젝트 멤버에게 알림이 전송됩니다.
+> If select type `role` for notification target, the notification is sent only to members whose roles you select are set up.  
+> For example, if select `ADMIN` role, members with `OWNER` role will not be notified.
+>
+> If select project role, notifications are sent only to the members of the project to which the selected role set among project members the Resource that event occurred belong to.  
+> For example, if you have two projects created and you select ADMIN member, notification is sent to the project member who has ADMIN role of Project A when notifications occur on the Resource created in Project A.
 
-#### 알림 수정
+#### Modify Notifications
 
-알림의 이름, 설명 및 대상 리소스, 알림 수신 대상 또는 웹훅 설정을 변경할 수 있습니다.
-- 알림 규칙은 변경할 수 없습니다.
-- 목록에서 이미 생성된 알림 설정을 수정하고 **추가**를 클릭할 경우 수정한 값으로 반영합니다.
-  - 예시: Email만 선택하여 값이 저장되어 있는 경우 목록에서 SMS를 선택하여 **추가**를 누르면 해당 값으로 업데이트합니다.
+You can change name, description, target resource of the notification, notification recipient, or the webhook settings.
+- Notification rules are not allowed to change.
+- Modify notification settings that have already been created in the list, and then click **Add** to reflect modified values.
+  - Example: Select Email only and if the value is saved, select SMS from the list and press **Add** to update it.
 
-#### 알림 삭제
+#### Delete Notifications
 
-알림 검색 화면의 알림 목록에서 삭제할 항목의 체크 박스를 선택해 삭제할 수 있습니다. 여러 항목을 한 번에 삭제할 수도 있습니다.
+You can delete item by selecting check box for the item you want to delete from notification list on Search Notification screen. You can also delete multiple items at once.
 
 ![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_EN.png)
 
-> 알림을 삭제하면 더 이상 알림을 수신하지 않게 됩니다.  
-> 해당 알림에서 발생했던 알림 이력 정보가 함께 삭제되어 복구할 수 없게 됩니다.
-> 알림 삭제는 리소스 및 리소스 그룹, 리소스 태그에 영향을 미치지 않습니다.
+> If delete an alert, you will no longer receive notification.  
+> Notification history information that occurred in that notification will be deleted together and cannot be recovered.
+Deleting Notification does not affect Resources, resource groups, or resource tags.
 
-### 리소스
+### Resource
 
-NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 관리할 수 있습니다.
-동일한 서비스를 여러 프로젝트에서 사용하는 경우 각 프로젝트의 서비스 콘솔에 방문하지 않고도 Resource Watcher 서비스를 통해 한 눈에 리소스 목록을 확인하고 각 리소스의 이벤트를 조회할 수 있습니다.
-또한 리소스에 리소스 태그를 설정하고 리소스 그룹을 설정하여 다양한 관점으로 분류할 수 있습니다.
+Manage Resources managed by various services within NHN Cloud organization.
+If multiple projects use the same service, Resource Watcher service allows to view list of Resources at a glance and view events for each Resource without having to visit the service console for respective project.
+You can also set resource tags for Resources and set resource groups to categorize them from different perspectives.
 
-리소스는 다음과 같은 체계의 일부로 관리합니다.
+Resources are managed as part of the following schemes.
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 서비스 | <li>사용자가 이용 중인 NHN Cloud의 서비스를 의미합니다.</li><li>기본 인프라 서비스, Kubernetes, Deploy 등을 예로 들 수 있습니다. | 
-| 리소스 유형 | <li>리소스 유형은 물리적으로 생성된 리소스를 분류하는 단순하고 기본적인 정보입니다.</li><li>각 서비스는 다양한 리소스 유형으로 구성될 수 있습니다.</li><li>예를 들어 기본 인프라 서비스는 Compute Instance, Network 등의 서비스로 구성되어 있으며 Instance, VPC와 같은 리소스 유형을 사용자에게 제공합니다.</li><li>리소스 유형은 리소스의 태생적 속성 정보라고 할 수 있으며, 리소스 태그와 함께 제공하는 분류 기준의 일부입니다. | 
-| 리소스 | <li>각 서비스에서 생성되어 관리되는 실체화된 대상입니다.</li><li>예를 들어 Compute > Instance 서비스에서 관리하는 인스턴스들이나 Network > VPC 서비스에서 관리하는 VPC가 될 수 있습니다.</li><li>각각의 리소스는 이름이나 구현 타입 등 자신에 대한 설정 정보를 가지고 있습니다.</li><li>또한 다른 리소스와 연관관계를 가지는 경우도 있습니다. |
-| 이벤트 | <li>각 리소스마다 발생할 수 있는 다양한 이벤트가 존재합니다.</li><li>CloudTrail에서는 여러 리소스에서 생성되는 다양한 이벤트를 한꺼번에 조회하고 관리할 수 있습니다.</li><li>Resource Watcher에서는 개별 리소스마다 발생한 다양한 이벤트를 좀 더 세밀하게 조회할 수 있습니다. |
+| Service | <li>Refers to NHN Cloud Service in use.</li><li>Examples include default infrastructure services, Kubernetes, Deploy, and so on. | 
+| Resource Type | <li>Resource type is simple and basic information that categorizes physically created Resources.</li><li>Each service can consist of different Resource types.</li><li>For example, default infrastructure service consists of Compute Instance, Network, and it provides users with Resource types such as Instance and VPC.</li><li>Resource types are part of classification criteria that you provide with resource tags, and are called information about the Resource's inherent properties. | 
+| Resource | <li>Materialized targets created and managed by each service.</li><li>For example, it can be Instance managed by Compute > Instance service or VPC managed by Network > VPC service.</li><li>Each Resource has configuration information about itself, such as name or implementation type.</li><li>It may also be associated with other Resources. |
+| Event | <li>There are various events that can occur for each Resource.</li><li>CloudTrail allows to view and manage various events created by multiple Resources at once.</li><li>Resource Watcher provides more detailed view of the different events that occur for each individual Resource. |
 
-리소스는 아래와 같은 정보로 구성됩니다.
+Resource consists of following information.
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스명 | 사용자가 정의하거나 시스템에 의해 자동으로 부여된 이름. |
-| 리소스 ID | 리소스가 생성될 때 부여된 식별 정보.<br>서비스마다 유일성 범위가 다를 수 있어 고유 식별 정보로 사용하기 어려움. |
-| NCRN | NCRN(NHN Cloud Resource Name)은 NHN Cloud 전체 서비스에서 리소스를 식별할 수 있는 유일한 식별 키 정보.<br>표시 형식: `조직 ID`:`프로젝트 ID`:`리소스 유형`:`앱키`:`리전 코드`:`리소스 ID`<br>예시: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
-| 프로젝트 | 리소스가 생성된 프로젝트 이름.<br>조직 상품 리소스이면 해당 정보를 표시하지 않음. |
-| 서비스 | 리소스가 속한 서비스 정보. |
-| 리소스 유형 | 리소스가 속한 리소스 유형 정보. | 
-| 리전 | 해당 리소스가 생성된 리전 정보.<br>리전을 구분하지 않는 서비스의 리소스는 표시하지 않음. |
-| 리소스 그룹 목록 | 리소스를 포함하는 리소스 그룹의 목록 |
-| 리소스 태그 목록 | 리소스에 설정된 리소스 태그 목록 | 
+| Resource name | Name defined by user or automatically given by system. |
+| Resource ID | Identification information given when Resource was created.<br>As cope of uniqueness may vary from service to service, it is difficult to use as unique identification information  |
+| NCRN | NHN Cloud Resource Name (NCRN) is the only identification key information that can identify Resources across NHN Cloud services.<br>Display format: `Organization ID`:`Project ID`:`Resource Type`:`Appkey`:`Region Code`:`Resource ID`<br>Example: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
+| Project | Name of the project where the resource was created.<br>Do not display information if it is organizational product resource. |
+| Service | Service information to which Resource belongs to. |
+| Resource Type | Service type information to which Resource belongs to. | 
+| Region | Region Information where the resource was created. <br>Do not display resources for services that do not distinguish regions. |
+| Resource Group List | Resource Group List including resources |
+| Resource Tag List | Resource Tag List which was set in Resource | 
 
 
-#### 리소스 검색
+#### Search Resources
 
-리소스 검색 화면은 다음과 같이 구성되어 있습니다.
+Search Resource screen consists of as follows.
 
 ![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 검색 조건 | 다음과 같은 검색 조건을 지정하여 해당하는 리소스를 검색할 수 있습니다.<li>프로젝트명</li><li>서비스</li><li>리소스 유형</li><li>리전</li><li>리소스 그룹</li><li>리소스 태그</li><li>리소스명</li><li>리소스 생성 일시 |
-| 리소스 태그 설정 | 선택한 리소스에 리소스 태그를 설정합니다. |
-| 리소스 전체 선택 | 화면에 표시된 모든 리소스를 선택하거나 해제합니다. |
-| 리소스 항목 표시 | 검색된 리소스의 정보를 화면에 표시합니다. **보기**를 눌러 자세한 리소스 정보를 확인할 수 있습니다. |
-| 리소스 그룹 | 해당 리소스를 포함하는 리소스 그룹 중 1건을 표시하고 그 외 설정된 리소스 그룹의 개수를 표시합니다. 전체 리소스 그룹 목록을 확인하려면 해당 위치를 클릭합니다.  |
-| 리소스 태그 | 해당 리소스에 설정된 리소스 태그 중 1건을 표시하고 그 외 설정된 리소스 태그의 개수를 표시합니다. 전체 리소스 태그 목록을 확인하려면 해당 위치를 클릭합니다. |
-| 호버링 메뉴 | 리소스 그룹이나 리소스 태그에 대한 전체 목록을 표시합니다. |
-| 상세보기 | 해당 리소스에 대한 `기본 정보`와 `이벤트`를 조회합니다. |
+| Resource Search Condition | You can search for resources by specifying the following search criteria.<li>Project name</li><li>Service</li><li>Resource Type</li><li>Region</li><li>Resource Group</li><li>Resource Tag</li><li>Resource Name</li><li>Resource Creation date and time |
+| Resource Tag Settings | Sets resource tag for selected Resource. |
+| Select whole Resource | Select or deselect all Resources displayed on screen. |
+| Display Resource Items | Displays information of Searched Resource on screen. Click **View** to check Resource information in detail. |
+| Resource Group | Display one of the resource groups that contain the corresponding Resource and displays the number of other set resource groups. To view complete list of resource groups, click the location.  |
+| Resource Tag | Display one of the resource tags that contain the corresponding resource tags and displays the number of other set resource tags. To view complete list of resource tags, click the location. |
+| Hovering Menu | Display the full list of resource groups or resource tags. |
+| View in Detail | Query `basic information` and `events` for the corresponding resource. |
 
-> NHN Cloud 서비스에서 각 리소스를 생성하거나 삭제하면 자동으로 Resource Watcher 서비스에서 리소스 정보가 동기화되어 노출됩니다.
-> 리소스를 생성하면 목록에 노출되고, 리소스를 삭제하면 목록에서 제거되어 노출하지 않습니다. 추후 삭제된 리소스도 조회할 수 있는 기능을 제공할 예정입니다.
+> When create or delete each Resource from NHN Cloud service, Resource Watcher service automatically synchronizes and exposes Resource information.
 
-**보기**를 누르면 화면 하단에 다음과 같이 리소스의 기본 정보와 이벤트 목록을 표시합니다.
+When creating a resource, it is exposed to the list, and when you delete the resource, it is removed from the list and not to be exposed. We will provide features to check deleted resources in the future.
+
+Press **View** to display list of basic information and events for Resource at the bottom of screen as follows.
 
 ![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 기본 정보, 이벤트 조회 | 리소스의 기본 정보를 조회할 수 있는 탭과 리소스에서 발생한 이벤트를 조회하는 탭을 제공합니다. |
-| 리소스 기본 정보 항목 | 선택한 리소스의 기본 정보를 표시합니다. |
+| Basic Information, Event Query | Provides tabs for querying basic information about Resources and for querying events that occur in Resources. |
+| Resource basic information item | Displays basic information for the selected Resource. |
 
-**이벤트 조회** 탭을 누르면 화면 하단에 리소스에서 발생한 이벤트 목록을 표시합니다.
+Click **Event Query** tab to display list of events that occurred in Resource at the bottom of screen.
 
 ![resourcewatcher_43](https://static.toastoven.net/prod_resource_watcher/img43_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 이벤트 검색 조건 | 다음과 같은 검색 조건으로 리소스에서 발생한 이벤트 목록을 검색할 수 있습니다.<li>이벤트: 해당 리소스 유형에서 발생 가능한 이벤트의 목록을 지정합니다.</li><li>이벤트 발생 일시: 이벤트가 발생한 기간을 지정합니다. |
-| 이벤트 목록 | 해당 리소스에서 발생한 이벤트 목록을 표시합니다. |
+| Search Event Condition | You can search for list of events that occurred in Resource with following search criteria.<li>Events: Specifies list of possible events for that corresponding resource type.</li><li>Date and time of event occurrence: Specifies period that event occurred. |
+| Event List | Displays the list of events that occurred on that resource. |
 
+#### Resource Tag Setting
 
-#### 리소스 태그 설정
-
-리소스에 리소스 태그를 설정하려면 리소스 검색 화면에서 **리소스 태그 설정**을 클릭합니다.
+To set resource tags for Resource, click **Set resource tags** on Search Resource screen.
 
 ![resourcewatcher_45](https://static.toastoven.net/prod_resource_watcher/img45_EN.png)
 
-| 항목 | 설명 |
+| Items | Description |
 |---|---|
-| 리소스 선택 | 리소스 태그를 설정하려는 리소스에 대한 체크박스를 선택합니다. 체크박스를 선택하면 **리소스 태그 설정** 버튼이 활성화됩니다. |
-| 리소스 태그 설정 | **리소스 태그 설정**을 누르면 설정 화면이 팝업됩니다. |
-| 리소스 태그 선택 | 설정할 대상 리소스 태그의 목록을 검색합니다. 리소스 태그의 이름이 부분 일치하는 태그 목록을 조회합니다. |
-| 선택 가능한 항목 표시 | 모든 리소스 태그 목록을 표시하며, 해당 리소스에 설정된 리소스 태그가 존재할 경우 각 태그 항목에 체크박스를 활성화하여 표시합니다. |
-| 확인 | **리소스 태그 설정** 화면의 내용을 반영합니다. |
+| Select Resource | Select check box for Resource for which want to set resource tag. Select check box to activate **Set resource tag** button. |
+| Resource Tag Setting | Press **Set resource tag** to pop up Settings screen. |
+| Select Resource Tag | Search list of target resource tags to set. View list of tags of which names partially match resource tags |
+| Display Selectable Items | Display list of all resource tags, and, if resource tag exists set for that Resource, enables check box for respective tag item. |
+| Confirm | Reflect the content of the **Resource Tag Settings** screen. |
 
-리소스 태그 설정 시 주의사항
-> 리소스 태그를 설정하면 기존에 설정되었던 리소스 태그 목록이 모두 초기화되고 새롭게 지정한 리소스 태그로 설정됩니다.
+Precautions for Setting resource tags
+> When setting resource tags, the list of previously set resource tags is initialized and set as the newly specified resource tag.
