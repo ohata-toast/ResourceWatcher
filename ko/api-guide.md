@@ -579,7 +579,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 **[Request Body]**
 
-* ``참고`` : 1.1) 이벤트 알림 생성의 [Request Body](#post-alarm-request)과 동일합니다.
+* ``참고`` : 1.1) 이벤트 알림 생성의 [Request Body](#post-alarm-request)와 동일합니다.
 
 #### 1.5. Event Alarm 삭제
 
@@ -777,12 +777,12 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 - TargetMember <a id="get-alarm-history-response-target-member"></a>
 
-| Key          | Type   | 	Description                     |
-|--------------|--------|----------------------------------|
-| idNo         | String | 	발생한 이벤트의 대상 회원의 UUID            |
-| name         | String | 	발생한 이벤트의 대상 회원의 이름              |
-| userCode     | String | 	발생한 이벤트의 대상 회원의 ID(IAM 회원일 경우) |
-| emailAddress | String | 	발생한 이벤트의 대상 회원                  |
+| Key          | Type   | 	Description                    |
+|--------------|--------|---------------------------------|
+| idNo         | String | 	발생한 이벤트의 대상 회원의 UUID           |
+| name         | String | 	발생한 이벤트의 대상 회원의 이름             |
+| userCode     | String | 	발생한 이벤트의 대상 회원의 ID(IAM 멤버일 경우) |
+| emailAddress | String | 	발생한 이벤트의 대상 회원                 |
 
 ```json
 {
@@ -936,7 +936,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 | resourceName             | String | 	리소스 이름                                                           |
 | resourceTypeCode         | String | 	리소스 타입                                                           |
 | resourceCreationTypeCode | String | 	리소스 생성 타입<br/><br/><종류><br/>1. SYSTEM: 시스템 생성<br/>2. USER: 회원 생성 |
-| resourceStatusCode       | String | 	리소스 상태 코드<br/><br/><종류><br/>1. STABLE :정상<br/>2. CLOSED :삭제     |
+| resourceStatusCode       | String | 	리소스 상태 코드<br/><br/><종류><br/>1. STABLE: 정상<br/>2. CLOSED: 삭제      |
 | description              | String | 	리소스 설명                                                           |
 | cloudResourceName        | String | 	리소스의 NHN Cloud Resource Name                                     |
 | createDatetime           | Date   | 	이벤트 발생 일시                                                        |
@@ -979,7 +979,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 |--------------|--------|---------------------------------|
 | idNo         | String | 	발생한 이벤트의 대상 회원의 UUID           |
 | name         | String | 	발생한 이벤트의 대상 회원의 이름             |
-| userCode     | String | 	발생한 이벤트의 대상 회원의 ID(IAM 회원일 경우) |
+| userCode     | String | 	발생한 이벤트의 대상 회원의 ID(IAM 멤버일 경우) |
 | emailAddress | String | 	발생한 이벤트의 대상 회원                 |
 
 ```json
@@ -1087,7 +1087,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 | eventNameLike   | 검색할 이벤트 이름                                                           | No       |
 | page            | 조회할 페이지 번호<br/>Default 값: 0                                          | No       |
 | size            | 조회할 알림 개수<br/>Default 값: 10                                          | No       |
-| sort            | 정렬 대상 및 방식<br/>Default 값 : productName:ASC,eventName:ASC | No       |
+| sort            | 정렬 대상 및 방식<br/>Default 값: productName:ASC,eventName:ASC | No       |
 
 **[Response Body]**
 
