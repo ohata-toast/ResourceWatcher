@@ -169,8 +169,8 @@ Target Resource for notification can be set using resource groups or resource ta
 Therefore, you must create resource groups or resource tags before creating notifications.
 When selecting notification targets, if Resource is added after notification is created by re-tagging a resource group or resource tag that was already used for another notifications, it is automatically included in notifications once the corresponding Resource is included in a resource group or resource tag that have set when the notification was created.
 
-알림을 생성할 때 이벤트를 선택하고 대상 리소스를 지정하면 해당 리소스에서 해당하는 이벤트가 발생했을 때 사용자에게 알림을 전송합니다.
-이때 선택하는 이벤트는 CloudTrail 서비스에서 제공하는 이벤트 목록과 동일합니다. 
+When creating a notification, you select an event and specify a target resource, and the user will be notified when the corresponding event occurs on that resource.
+The events you select are the same as the list of events provided by the CloudTrail service.
 
 #### Search Notifications
 
@@ -214,18 +214,18 @@ Click **View Resource List** tab to display list of Resources to be notified at 
 
 #### Create Notifications
 
-To Create notifications, press ** Create notifications** on Search Notifications screen.
+To Create notifications, press **Create notifications** on Search Notifications screen.
 
 ![resourcewatcher_35](https://static.toastoven.net/prod_resource_watcher/img35_EN.png)
 
-| Items                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Create notifications            | Press ** Create notifications ** to enter notifications information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Select Events                   | Specify Events that wants to get notified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Target Resource                 | Specify Resources of interest that wants to get notified.<li>You can specify **Resource Group** and **Resource Tag**. Press **Add** to select it.</li><li>When multiple items are selected, all Resources set for each item are targeted.</li><li>Press [X] button on the right to remove the selected target.</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Notifications Recipients Target | Set the recipient to forward email, SMS when sending notifications. Types of Notifications recipients are as follows.<li>Organization members: NHN Cloud membership, IAM membership can be selected by themselves.</li><li>Notifications Recipients Groups – Can select predefined recipients from the list of Notifications Recipients Groups in one’s organization. If multiple Notifications require the same notification recipient settings, we recommend that you register and use them in **Console**>**Organization**>** Notifications Recipients Groups Management**.</li><li>Role: Sends notifications to all members with the selected role. You can choose from organizational roles, project roles, project common role groups, and service roles.</li> |
-| WebHook                         | You can forward WebHook requests when sending notifications.<li>Supports https protocol. </li><li>For WebHook Payload Spec, refer to [Console Usage Guide].</li><li>When entered secret key, the HMAC credentials are sent to the header. Refer to [Console Usage Guide].</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Confirm                         | Set all notifications rules, target resources, notifications recipients, or webhooks required to generate notifications, and press **OK** to generate notifications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Items       | Description                                                                                                                                                                                                                                                                                                                                                               |
+|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Create notifications    | Press **Create notifications** to enter notifications information.                                                                                                                                                                                                                                                                                                                                |
+| Select Event   | Specify multiple events you want to be notified of.                                                                                                                                                                                                                                                                                                                                     |
+| Target Resource   | Specify Resources of interest that wants to get notified.<li>You can specify **Resource Group** and **Resource Tag**. Press **Add** to select it.</li><li>When multiple items are selected, all Resources set for each item are targeted.</li><li>Press [X] button on the right to remove the selected target.</li>                                                                                                                                                                              |
+| Notifications Recipients Target | Set the recipient to forward email, SMS when sending notifications. Types of Notifications recipients are as follows.<li>Organization members: You can directly select NHN Cloud members and IAM members.</li><li>Notifications Recipients Groups – Can select predefined recipients from the list of Notifications Recipients Groups in one’s organization. If multiple Notifications require the same notification recipient settings, we recommend that you register and use them in **Console** > **Organization** > **Notifications Recipients Groups Management**.</li><li>Role: Sends notifications to all members with the selected role. You can choose from organizational roles, project roles, project common role groups, and service roles.</li> |
+| WebHook       | You can forward WebHook requests when sending notifications.<li>Supports https protocol.</li><li>For WebHook Payload Spec, refer to [Console Usage Guide].</li><li>When entered secret key, the HMAC credentials are sent to the header. Refer to [Console Usage Guide].</li>                                                                                                                                                                                  |
+| Confirm       | Set all events, target resources, notifications recipients, or webhooks required to generate notifications, and press **OK** to generate notifications.                                                                                                                                                                                                                                                                                          |
 
 > If select type `role` for notification target, the notification is sent only to members whose roles you select are set up.  
 > For example, if select `ADMIN` role, members with `OWNER` role will not be notified.
@@ -235,24 +235,24 @@ To Create notifications, press ** Create notifications** on Search Notifications
 
 #### Modify Notifications
 
-You can change name, description, events, target resource of the notification, notification recipient, or the webhook settings. 
+You can change name, description, event, and target resource of the notification, notification recipient, or the webhook settings.
 - Modify notification settings that have already been created in the list, and then click **Add** to reflect modified values.
   - Example: Select Email only and if the value is saved, select SMS from the list and press **Add** to update it.
 
-#### Delete Notifications 
+#### Delete Notifications
 
 You can delete item by selecting check box for the item you want to delete from notification list on Search Notification screen. You can also delete multiple items at once.
 
 ![resourcewatcher_34](https://static.toastoven.net/prod_resource_watcher/img34_EN.png)
 
 > If delete an alert, you will no longer receive notification.  
-> Notification history information that occurred in that notification will be deleted together and cannot be recovered. 
+> Notification history information that occurred in that notification will be deleted together and cannot be recovered.
 Deleting Notification does not affect Resources, resource groups, or resource tags.
 
 ### Resource
 
-Manage Resources managed by various services within NHN Cloud organization. 
-If multiple projects use the same service, Resource Watcher service allows to view list of Resources at a glance and view events for each Resource without having to visit the service console for respective project. 
+Manage Resources managed by various services within NHN Cloud organization.
+If multiple projects use the same service, Resource Watcher service allows to view list of Resources at a glance and view events for each Resource without having to visit the service console for respective project.
 You can also set resource tags for Resources and set resource groups to categorize them from different perspectives.
 
 Resources are managed as part of the following schemes.
@@ -269,12 +269,12 @@ Resource consists of following information.
 | Items | Description |
 |---|---|
 | Resource name | Name defined by user or automatically given by system. |
-| Resource ID | Identification information given when Resource was created.<br>As cope of uniqueness may vary from service to service, it is difficult to use as unique identification information  |
+| Resource ID | Identification information given when Resource was created.<br>As cope of uniqueness may vary from service to service, it is difficult to use as unique identification information |
 | NCRN | NHN Cloud Resource Name (NCRN) is the only identification key information that can identify Resources across NHN Cloud services.<br>Display format: `Organization ID`:`Project ID`:`Resource Type`:`Appkey`:`Region Code`:`Resource ID`<br>Example: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
 | Project | Name of the project where the resource was created.<br>Do not display information if it is organizational product resource. |
 | Service | Service information to which Resource belongs to. |
 | Resource Type | Service type information to which Resource belongs to. | 
-| Region | Region Information where the resource was created. <br>Do not display resources for services that do not distinguish regions. |
+| Region | Region Information where the resource was created.<br>Do not display resources for services that do not distinguish regions. |
 | Resource Group List | Resource Group List including resources |
 | Resource Tag List | Resource Tag List which was set in Resource | 
 
@@ -297,10 +297,9 @@ Search Resource screen consists of as follows.
 | View in Detail | Query `basic information` and `events` for the corresponding resource. |
 
 > When create or delete each Resource from NHN Cloud service, Resource Watcher service automatically synchronizes and exposes Resource information.
-
 When creating a resource, it is exposed to the list, and when you delete the resource, it is removed from the list and not to be exposed. We will provide features to check deleted resources in the future.
 
-Press **View** to display list of basic information and events for Resource at the bottom of screen as follows. 
+Press **View** to display list of basic information and events for Resource at the bottom of screen as follows.
 
 ![resourcewatcher_42](https://static.toastoven.net/prod_resource_watcher/img42_EN.png)
 
@@ -317,6 +316,7 @@ Click **Event Query** tab to display list of events that occurred in Resource at
 |---|---|
 | Search Event Condition | You can search for list of events that occurred in Resource with following search criteria.<li>Events: Specifies list of possible events for that corresponding resource type.</li><li>Date and time of event occurrence: Specifies period that event occurred. |
 | Event List | Displays the list of events that occurred on that resource. |
+
 
 #### Resource Tag Setting
 
