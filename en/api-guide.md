@@ -9,19 +9,19 @@ User Access Key and Secret Access Key can be issued from **API Security Settings
 Put the mouse pointer to an account in the top right of console, then select **API Security Settings** from the drop-down menu that appears and click on **Create User Access Key ID**.<br/>
 For security purposes, it is recommended to create both User Access Key and Secret Access Key.
 
-![[Figure 1] API Security Settings Location](http://static.toastoven.net/prod_resource_watcher/img46_1_EN.png)
+![[Figure 1] API Security Settings Location](http://static.toastoven.net/prod_resource_watcher/img46_EN.png)
 <center>[Figure 1] API Security Settings Location</center>
 
-![[Figure 2] API Security Settings Page](http://static.toastoven.net/prod_resource_watcher/img47_1_EN.png)
+![[Figure 2] API Security Settings Page](http://static.toastoven.net/prod_resource_watcher/img47_EN.png)
 <center>[Figure 2] API Security Settings Page</center>
 
-![[Figure 3] Create UserAccessKey and SecretAccessKey](http://static.toastoven.net/prod_resource_watcher/img48_1_EN.png)
+![[Figure 3] Create UserAccessKey and SecretAccessKey](http://static.toastoven.net/prod_resource_watcher/img48_EN.png)
 <center>[Figure 3] Create User Access Key and Secret Access Key</center>
 
 ## Check Public API URL & Appkey
 Appkey is required to use RESTful API.<br/>
 You can check the issued key information by clicking URL & Appkey on the right side of console. 
-![[ Figure 4] Public API URL & Appkey](http://static.toastoven.net/prod_resource_watcher/img49_1_EN.png)
+![[ Figure 4] Public API URL & Appkey](http://static.toastoven.net/prod_resource_watcher/img49_EN.png)
 <center>[ Figure 4] URL & Appkey</center>
 
 ## REST API Guide
@@ -551,9 +551,9 @@ Look up the list of registered event alarms.
 
 **[Basic Information]**
 
-| Method | URI | 
-|--------|-----------------------------------------------------------| 
-| PUT | /resource-watcher/v1.0/appkeys/{appKey}/alarms/{alarmId} |
+| Method | URI                                                            | 
+|--------|----------------------------------------------------------------| 
+| PUT | /resource-watcher/v1.0/appkeys/{appKey}/event-alarms/{alarmId} |
 
 | Permission | 
 |--------------------------------| 

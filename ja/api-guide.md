@@ -9,19 +9,19 @@ User Access KeyとSecret Access Keyは**APIセキュリティ設定**で発行�
 コンソール右上のアカウントにマウスポインタを合わせると表示されるドロップダウンメニューから**APIセキュリティ設定**を選択した後、**User Access Key ID作成**をクリックします。<br/>
 セキュリティのため、User Access KeyとSecret Access Keyの両方を作成することを推奨します。
 
-![[図1] APIセキュリティ設定位置](http://static.toastoven.net/prod_resource_watcher/img46_1_KO.png)
+![[図1] APIセキュリティ設定位置](http://static.toastoven.net/prod_resource_watcher/img46_JP.png)
 <center>[図1] APIセキュリティ設定位置</center>
 
-![[図2] APIセキュリティ設定ページ](http://static.toastoven.net/prod_resource_watcher/img47_1_KO.png)
+![[図2] APIセキュリティ設定ページ](http://static.toastoven.net/prod_resource_watcher/img47_JP.png)
 <center>[図2] APIセキュリティ設定ページ</center>
 
-![[図3] UserAccessKeyとSecretAccessKey作成](http://static.toastoven.net/prod_resource_watcher/img48_1_KO.png)
+![[図3] UserAccessKeyとSecretAccessKey作成](http://static.toastoven.net/prod_resource_watcher/img48_JP.png)
 <center>[図3] User Access KeyとSecret Access Key作成</center>
 
 ## Public API URL & Appkey確認
 RESTful APIを使用するにはAppkeyが必要です。<br/>
 コンソール右側のURL & Appkeyをクリックして発行されたkey情報を確認できます。
-![[図4] Public API URL & Appkey](http://static.toastoven.net/prod_resource_watcher/img49_1_KO.png)
+![[図4] Public API URL & Appkey](http://static.toastoven.net/prod_resource_watcher/img49_JP.png)
 <center>[図4] URL & Appkey</center>
 
 ## REST APIガイド
