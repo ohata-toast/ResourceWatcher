@@ -551,9 +551,9 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 **[基本情報]**
 
-| Method | 	URI                                                      |
-|--------|-----------------------------------------------------------|
-| PUT    | 	/resource-watcher/v1.0/appkeys/{appKey}/alarms/{alarmId} |
+| Method | 	URI                                                            |
+|--------|-----------------------------------------------------------------|
+| PUT    | 	/resource-watcher/v1.0/appkeys/{appKey}/event-alarms/{alarmId} |
 
 | 権限                            | 	
 |--------------------------------|
@@ -1056,9 +1056,6 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 |--------|-------------------------------------------------|
 | GET    | 	/resource-watcher/v1.0/appkeys/{appKey}/events |
 
-| 権限                            | 	
-|--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
 
 通知に設定できるイベントリストを照会します。
 - イベントはCloudTrailに登録されたイベントIDをベースにします。
@@ -1069,9 +1066,8 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | Key                        | 	Value                        |
 |----------------------------|-------------------------------|
-| X-TC-AUTHENTICATION-ID     | 	コンソールで発行されたUser Access Key   |
-| X-TC-AUTHENTICATION-SECRET | 	コンソールで発行されたSecret Access Key |
 | lang                       | 	言語コード<br/>検索条件およびレスポンス値は言語コードに該当する値(ko, en, ja, zh)<br/>Default値: ko |
+
 **[Path Variable]**
 
 | Key     | Value                    |
@@ -1079,6 +1075,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 | appKey  | コンソールで発行されたAppkey        | 
 
 **[Query Parameter]**
+
 
 | Key             | Value                                                                | Required |
 |-----------------|----------------------------------------------------------------------|----------|
@@ -1088,6 +1085,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 | page            | 照会するページ番号<br/>Default値: 0                                          | No       |
 | size            | 照会する通知数<br/>Default値: 10                                          | No       |
 | sort            | ソート対象および方式<br/>Default値: productName:ASC,eventName:ASC | No       |
+
 
 **[Response Body]**
 
