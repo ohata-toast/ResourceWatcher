@@ -1,14 +1,16 @@
-### 2024. 02. 27.
+## Governance & Audit > Resource Watcher > Release Notes
 
-#### 기능 개선
+### February 27, 2024
 
-- 알림 내역 조회 화면에서 콘솔로 이동 시 해당 알림의 상세 이력을 확인할 수 있도록 기능을 개선하였습니다.
-- 각 목록의 캘린더 검색 필터를 목적에 맞게 기본값을 수정하였습니다.
-  - 전체 기간을 조회하는 경우, 조직 생성 일시부터 조회 일자까지 조회되도록 변경하였습니다.
-  - 리소스의 이벤트 조회 기간을 최근 3개월까지만 선택 가능하도록 수정하였습니다.
-    - 3개월 이상의 기간을 선택해도 최근 3개월까지만 조회가 가능했었기에 최근 3개월만 선택 가능하도록 수정하였습니다.
-- 알림 생성 시 수신 대상, 이벤트, 리소스를 더 편리하게 추가할 수 있도록 개선하였습니다.
-  - 기존에 수신 방법을 선택하고 추가 버튼을 누르는 두 단계를 거쳤습니다. 이제 수신 방법을 선택하면 바로 추가할 수 있습니다.
+#### Feature Updates
+
+- Improved to view the detailed history of an notification when navigating to the console from the notification history screen.
+- Modified the defaults of calendar search filters in each list according to the purposes.
+  - Modified to view the period from organization creation date to view date when viewing the entire period.
+  - Fixed the event lookup period for resources to only be selectable up to the last 3 months.
+    - Fixed the event lookup period so that you can only select the last 3 months. If you selected a time period longer than 3 months, you could only see the last 3 months.
+- Improved to add recipients, events, and resources when creating notifications.
+  - Select only the receive method to add the items. Previously, you needed to take two steps, selecting the receive method and clicking the add button.
 
 ### November 14, 2023.
 
