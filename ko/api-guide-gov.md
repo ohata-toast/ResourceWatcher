@@ -551,9 +551,9 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 **[기본 정보]**
 
-| Method | 	URI                                                      |
-|--------|-----------------------------------------------------------|
-| PUT    | 	/resource-watcher/v1.0/appkeys/{appKey}/alarms/{alarmId} |
+| Method | 	URI                                                            |
+|--------|-----------------------------------------------------------------|
+| PUT    | 	/resource-watcher/v1.0/appkeys/{appKey}/event-alarms/{alarmId} |
 
 | 권한                             | 	
 |--------------------------------|
@@ -1056,10 +1056,6 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 |--------|-------------------------------------------------|
 | GET    | 	/resource-watcher/v1.0/appkeys/{appKey}/events |
 
-| 권한                             | 	
-|--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
-
 알림에 설정할 수 있는 이벤트 목록을 조회합니다.
 - 이벤트는 CloudTrail에 등록된 이벤트 ID를 기반으로 합니다.
 - 이벤트에 대한 검색 기능을 제공합니다.
@@ -1067,11 +1063,10 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 **[Request Header]**
 
-| Key                        | 	Value                        |
-|----------------------------|-------------------------------|
-| X-TC-AUTHENTICATION-ID     | 	콘솔에서 발급 받은 User Access Key   |
-| X-TC-AUTHENTICATION-SECRET | 	콘솔에서 발급 받은 Secret Access Key |
+| Key                        | 	Value                                                                   |
+|----------------------------|--------------------------------------------------------------------------|
 | lang                       | 	언어 코드<br/>검색 조건 및 응답 값은 언어 코드에 해당하는 값(ko, en, ja, zh)<br/>Default 값: ko |
+
 **[Path Variable]**
 
 | Key     | Value                    |
@@ -1080,13 +1075,13 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 **[Query Parameter]**
 
-| Key             | Value                                                               | Required |
-|-----------------|---------------------------------------------------------------------|----------|
-| productIdList   | 검색할 상품 목록 ID 리스트<br/>여러 개 입력 가능                                     | No       |
-| productNameLike | 검색할 상품 이름                                                           | No       |
-| eventNameLike   | 검색할 이벤트 이름                                                          | No       |
-| page            | 조회할 페이지 번호<br/>Default 값: 0                                         | No       |
-| size            | 조회할 알림 개수<br/>Default 값: 10                                         | No       |
+| Key             | Value                                                   | Required |
+|-----------------|---------------------------------------------------------|----------|
+| productIdList   | 검색할 상품 목록 ID 리스트<br/>여러 개 입력 가능                         | No       |
+| productNameLike | 검색할 상품 이름                                               | No       |
+| eventNameLike   | 검색할 이벤트 이름                                              | No       |
+| page            | 조회할 페이지 번호<br/>Default 값: 0                             | No       |
+| size            | 조회할 알림 개수<br/>Default 값: 10                             | No       |
 | sort            | 정렬 대상 및 방식<br/>Default 값: productName:ASC,eventName:ASC | No       |
 
 **[Response Body]**
