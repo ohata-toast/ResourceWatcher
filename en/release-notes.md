@@ -1,5 +1,14 @@
 ## Governance & Audit > Resource Watcher > Release Notes
 
+### April 23, 2024
+
+#### Feature Updates
+
+- Changed the NCRN format to enhance security.
+  - Removed the appKey information.
+- Removed the constraint that the service is not available in the IAM Cloud Console.
+
+
 ### February 27, 2024
 
 #### Feature Updates

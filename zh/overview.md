@@ -12,6 +12,5 @@ Available on an organization basis and ready to use without any activation proce
 ## Precautions
 * When creating an organization, it is enabled automatically and cannot be disabled manually.
 * This service is only available for OWNER, ADMIN, and LOG_VIEWER in your organization.
-* This is organizational service and is not available in the IAM Cloud Console.
 * Currently, only instances of default infrastructure service are available as resources.
   * The service will be expanded continuously to allow users to check more various resources.

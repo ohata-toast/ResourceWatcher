@@ -1,4 +1,12 @@
-## Governance & Audit > Resource Watcher > Release Notes
+## Governance & Audit > Resource Watcher > リリースノート
+
+### 2024. 04. 23.
+
+#### 機能改善
+
+- Changed the NCRN format to enhance security.
+  - Removed the appKey information.
+- Removed the constraint that the service is not available in the IAM Cloud Console.
 
 ### 2024. 02. 27.
 
