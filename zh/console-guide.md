@@ -266,24 +266,24 @@ Resources are managed as part of the following schemes.
 
 Resource consists of following information.
 
-| Items | Description |
-|---|---|
-| Resource name | Name defined by user or automatically given by system. |
-| Resource ID | Identification information given when Resource was created.<br>As cope of uniqueness may vary from service to service, it is difficult to use as unique identification information  |
-| NCRN | NHN Cloud Resource Name (NCRN) is the only identification key information that can identify Resources across NHN Cloud services.<br>Display format: `Organization ID`:`Project ID`:`Resource Type`:`Appkey`:`Region Code`:`Resource ID`<br>Example: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
-| Project | Name of the project where the resource was created.<br>Do not display information if it is organizational product resource. |
-| Service | Service information to which Resource belongs to. |
-| Resource Type | Service type information to which Resource belongs to. | 
-| Region | Region Information where the resource was created. <br>Do not display resources for services that do not distinguish regions. |
-| Resource Group List | Resource Group List including resources |
-| Resource Tag List | Resource Tag List which was set in Resource | 
+| Items | Description                                                                                                                                                                                                                                                                                                                                    |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource name | Name defined by user or automatically given by system.                                                                                                                                                                                                                                                                                         |
+| Resource ID | Identification information given when Resource was created.<br>As cope of uniqueness may vary from service to service, it is difficult to use as unique identification information                                                                                                                                                             |
+| NCRN | NHN Cloud Resource Name (NCRN) is the only identification key information that can identify Resources across NHN Cloud services.<br>Display format: `Organization ID`:`Project ID`:`Resource Type`:`Region Code`:`Resource ID`<br>Example: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
+| Project | Name of the project where the resource was created.<br>Do not display information if it is organizational product resource.                                                                                                                                                                                                                    |
+| Service | Service information to which Resource belongs to.                                                                                                                                                                                                                                                                                              |
+| Resource Type | Service type information to which Resource belongs to.                                                                                                                                                                                                                                                                                         | 
+| Region | Region Information where the resource was created. <br>Do not display resources for services that do not distinguish regions.                                                                                                                                                                                                                  |
+| Resource Group List | Resource Group List including resources                                                                                                                                                                                                                                                                                                        |
+| Resource Tag List | Resource Tag List which was set in Resource                                                                                                                                                                                                                                                                                                    | 
 
 
 #### Search Resources
 
 Search Resource screen consists of as follows.
 
-![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_EN.png)
+![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_2_EN.png)
 
 | Items | Description |
 |---|---|

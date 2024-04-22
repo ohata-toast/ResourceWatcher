@@ -270,7 +270,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 |---|---|
 | 리소스명 | 사용자가 정의하거나 시스템에 의해 자동으로 부여된 이름. |
 | 리소스 ID | 리소스가 생성될 때 부여된 식별 정보.<br>서비스마다 유일성 범위가 다를 수 있어 고유 식별 정보로 사용하기 어려움. |
-| NCRN | NCRN(NHN Cloud Resource Name)은 NHN Cloud 전체 서비스에서 리소스를 식별할 수 있는 유일한 식별 키 정보.<br>표시 형식: `조직 ID`:`프로젝트 ID`:`리소스 유형`:`앱키`:`리전 코드`:`리소스 ID`<br>예시: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
+| NCRN | NCRN(NHN Cloud Resource Name)은 NHN Cloud 전체 서비스에서 리소스를 식별할 수 있는 유일한 식별 키 정보.<br>표시 형식: `조직 ID`:`프로젝트 ID`:`리소스 유형`:`리전 코드`:`리소스 ID`<br>예시: `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
 | 프로젝트 | 리소스가 생성된 프로젝트 이름.<br>조직 상품 리소스이면 해당 정보를 표시하지 않음. |
 | 서비스 | 리소스가 속한 서비스 정보. |
 | 리소스 유형 | 리소스가 속한 리소스 유형 정보. | 
@@ -283,7 +283,7 @@ NHN Cloud 조직 내 다양한 서비스들이 관리하고 있는 리소스를 
 
 리소스 검색 화면은 다음과 같이 구성되어 있습니다.
 
-![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_1_KO.png)
+![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_2_KO.png)
 
 | 항목 | 설명 |
 |---|---|
