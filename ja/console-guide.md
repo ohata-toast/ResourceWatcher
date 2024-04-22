@@ -270,7 +270,7 @@ NHN Cloud組織内のさまざまなサービスが管理しているリソー�
 |---|---|
 | リソース名 | ユーザーが定義したか、システムにより自動的に付与された名前。 |
 | リソースID | リソースが作成される時に付与された識別情報。<br>サービスごとに固有の範囲が異なる場合があり、固有識別情報として使用するのは難しいです。 |
-| NCRN | NCRN(NHN Cloud Resource Name)はNHN Cloudサービス全体でリソースを識別できる唯一の識別キー情報。<br>表示形式：`組織ID`：`プロジェクトID`：`リソースタイプ`：`アプリケーションキー`：`リージョンコード：`リソースID`<br>例： `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:9hR8Mh5nG4inePQh:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
+| NCRN | NCRN(NHN Cloud Resource Name)はNHN Cloudサービス全体でリソースを識別できる唯一の識別キー情報。<br>表示形式：`組織ID`：`プロジェクトID`：`リソースタイプ`：`リージョンコード：`リソースID`<br>例： `IU1gUaQki7fDv97V:5FlHkACb:INSTANCE:KGDeiKUq:KR1:f75ad8ad-a97e-47b6-acec-8c09304290c5` |
 | プロジェクト | リソースが作成されたプロジェクト名。<br>組織商品リソースの場合、当該情報を表示しない。 |
 | サービス | リソースが属するサービス情報。 |
 | リソースタイプ | リソースが属するリソースタイプ情報。 | 
@@ -283,7 +283,7 @@ NHN Cloud組織内のさまざまなサービスが管理しているリソー�
 
 リソース検索画面は次のように構成されています。
 
-![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_JP.png)
+![resourcewatcher_41](https://static.toastoven.net/prod_resource_watcher/img41_2_JP.png)
 
 | 項目 | 説明 |
 |---|---|
