@@ -1,5 +1,13 @@
 ## Governance & Audit > Resource Watcher > リリースノート
 
+### 2024. 05. 28.
+
+#### Feature Updates
+
+- 역할, 권한이 적용되었습니다.
+- API 호출에 필요한 권한 설명이 추가되었습니다. 
+
+
 ### 2024. 04. 23.
 
 #### 機能改善

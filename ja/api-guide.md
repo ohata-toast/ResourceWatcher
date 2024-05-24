@@ -66,7 +66,7 @@ RESTful APIを使用するにはAppkeyが必要です。<br/>
 
 | 権限                             | 	
 |---------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER  |
+| ResourceWatcher:Alarms.Create  |
 
 リソースで発生するイベントに対する通知を設定することができます。 <br/>
 
@@ -377,7 +377,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Get |
 
 登録された通知について照会します。
 
@@ -410,7 +410,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.List |
 
 登録したイベント通知リストを照会します。
 - リクエストに検索条件を指定して、目的の通知リストを照会できます。
@@ -557,7 +557,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Update |
 
 登録された通知を修正します。
 - リクエストした内容を全て変更するため、**変更がない内容も既存の設定値を送信する必要があります**。
@@ -591,7 +591,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 登録された通知を削除します。
 
@@ -626,7 +626,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 登録された通知を複数削除します。
 
@@ -667,7 +667,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.Get |
 
 登録された通知が送信した履歴を単件照会します。
 
@@ -867,7 +867,7 @@ productId, eventId値は[3.1イベントリスト照会APIレスポンス値](#l
 
 | 権限                            | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.List |
 
 登録された通知が送信した履歴を全て照会します。
 
