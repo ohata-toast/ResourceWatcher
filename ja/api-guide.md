@@ -64,7 +64,7 @@ RESTful APIを使用するにはAppkeyが必要です。<br/>
 |--------|-------------------------------------------------------|
 | POST   | 	/resource-watcher/v1.0/appkeys/{appKey}/event-alarms |
 
-| 権限                             | 	
+| 権限 | 	
 |---------------------------------|
 | ResourceWatcher:Alarms.Create  |
 
