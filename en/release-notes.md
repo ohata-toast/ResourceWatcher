@@ -4,8 +4,8 @@
 
 #### Feature Updates
 
-- 역할, 권한이 적용되었습니다.
-- API 호출에 필요한 권한 설명이 추가되었습니다. 
+- Applied roles and permissions.
+- Added the information on permissions required for API calls. 
 
 ### April 23, 2024
 

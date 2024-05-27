@@ -11,6 +11,6 @@ Available on an organization basis and ready to use without any activation proce
 
 ## Precautions
 * When creating an organization, it is enabled automatically and cannot be disabled manually.
-* 해당 서비스는 조직의 Resource Watcher 권한을 가진 멤버만 사용 가능합니다.
-* 현재는 기본 인프라 서비스의 인스턴스만 리소스로 확인할 수 있습니다.
-    * 더욱 다양한 서비스의 리소스를 확인할 수 있도록 지속하여 서비스를 확장할 예정입니다.
+* This service is only available for members with Resource Watcher permissions
+* Currently, only instances of default infrastructure service can be viewed as resources.
+    * The service will be expanded continuously to allow users to check resources of various services.
