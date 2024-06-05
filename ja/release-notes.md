@@ -1,8 +1,8 @@
 ## Governance & Audit > Resource Watcher > リリースノート
 
-### 2024. 05. 28.
+### 2024. 06. 11.
 
-#### Feature Updates
+#### 機能改善
 
 - ロール、権限が適用されました。
 - APIの呼び出しに必要な権限の説明が追加されました。 

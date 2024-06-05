@@ -1,6 +1,6 @@
 ## Governance & Audit > Resource Watcher > Release Notes
 
-### May 28, 2024
+### June 11, 2024
 
 #### Feature Updates
 

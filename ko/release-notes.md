@@ -1,6 +1,6 @@
 ## Governance & Audit > Resource Watcher > 릴리스 노트
 
-### 2024. 05. 28.
+### 2024. 06. 11.
 
 #### 기능 개선
 
