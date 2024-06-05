@@ -11,6 +11,6 @@ Available on an organization basis and ready to use without any activation proce
 
 ## Precautions
 * When creating an organization, it is enabled automatically and cannot be disabled manually.
-* This service is only available for OWNER, ADMIN, and LOG_VIEWER in your organization.
-* Currently, only instances of default infrastructure service are available as resources.
-    * The service will be expanded continuously to allow users to check more various resources.
+* This service is only available for members with Resource Watcher permissions
+* Currently, only instances of default infrastructure service can be viewed as resources.
+    * The service will be expanded continuously to allow users to check resources of various services.

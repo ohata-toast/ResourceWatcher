@@ -1,12 +1,20 @@
 ## Governance & Audit > Resource Watcher > リリースノート
 
+### 2024. 06. 11.
+
+#### 機能改善
+
+- ロール、権限が適用されました。
+- APIの呼び出しに必要な権限の説明が追加されました。 
+
+
 ### 2024. 04. 23.
 
 #### 機能改善
 
-- Changed the NCRN format to enhance security.
-  - Removed the appKey information.
-- Removed the constraint that the service is not available in the IAM Cloud Console.
+- セキュリティ強化のため、NCRNの形式が変更されました。
+  - appKey部分が削除されました。
+- IAM Cloud Consoleで使用できないという制約を削除しました。
 
 ### 2024. 02. 27.
 

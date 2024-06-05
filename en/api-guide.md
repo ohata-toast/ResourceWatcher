@@ -66,7 +66,7 @@ For detailed response results, refer to header item in Response Body.
 
 | Permission                              | 	
 |---------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER  |
+| ResourceWatcher:Alarms.Create  |
 
 You can set alarms for events that occur in a resource. <br/>
 
@@ -377,7 +377,7 @@ For values of productId, eventid, refer to [3.1 Event List lookup API Response V
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Get |
 
 Lookup registered alrms.
 
@@ -410,7 +410,7 @@ Lookup registered alrms.
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.List |
 
 Look up the list of registered event alarms. 
 - You can look up the list of alarms that you want through search criteria in the request.
@@ -557,7 +557,7 @@ Look up the list of registered event alarms.
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Update |
 
 Modify registered alarms. 
 - As all requests will be changed, **you must send existing settings even if there are no changes**.
@@ -591,7 +591,7 @@ Modify registered alarms.
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 Delete Registered Alarm
 
@@ -626,7 +626,7 @@ Delete Registered Alarm
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 Delete multiple Registered Alarm
 
@@ -667,7 +667,7 @@ Delete multiple Registered Alarm
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.Get |
 
 Look up the history of the registered alarm for one time.
 
@@ -867,7 +867,7 @@ Look up the history of the registered alarm for one time.
 
 | Permission | 
 |--------------------------------| 
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.List |
 
 Lookup all the history that registered alarm sent.
 
