@@ -64,9 +64,9 @@ RESTful API를 사용하려면 Appkey가 필요합니다.<br/>
 |--------|-------------------------------------------------------|
 | POST   | 	/resource-watcher/v1.0/appkeys/{appKey}/event-alarms |
 
-| 권한                              | 	
+| 권한 | 	
 |---------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER  |
+| ResourceWatcher:Alarms.Create |
 
 리소스에서 발생하는 이벤트에 대한 알림을 설정할 수 있습니다. <br/>
 
@@ -377,7 +377,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Get |
 
 등록된 알림에 대해 조회합니다.
 
@@ -410,7 +410,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.List |
 
 등록한 이벤트 알림 리스트를 조회합니다.
 - 요청에 검색 조건을 통해 원하는 알림 목록을 조회할 수 있습니다.
@@ -557,7 +557,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Update |
 
 등록된 알림을 수정합니다.
 - 요청한 내용을 모두 변경하므로 **변경사항이 없는 내용도 기존 설정 값을 전송해야 합니다**.
@@ -591,7 +591,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 등록된 알림을 삭제합니다.
 
@@ -626,7 +626,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:Alarms.Delete |
 
 등록된 알림을 여러 개 삭제합니다.
 
@@ -667,7 +667,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.Get |
 
 등록된 알림이 발송한 이력을 단건 조회합니다.
 
@@ -867,7 +867,7 @@ productId, eventId 값은 [3.1 이벤트 목록 조회 API 응답값](#list-even
 
 | 권한                             | 	
 |--------------------------------|
-| O_OWNER, O_ADMIN, O_LOG_VIEWER |
+| ResourceWatcher:AlarmHistories.List |
 
 등록된 알림이 발송한 이력을 모두 조회합니다.
 

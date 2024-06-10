@@ -1,5 +1,12 @@
 ## Governance & Audit > Resource Watcher > Release Notes
 
+### June 11, 2024
+
+#### Feature Updates
+
+- Applied roles and permissions.
+- Added the information on permissions required for API calls. 
+
 ### April 23, 2024
 
 #### Feature Updates
