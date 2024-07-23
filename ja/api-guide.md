@@ -56,6 +56,8 @@ RESTful APIを使用するにはAppkeyが必要です。<br/>
 
 ### 1. Alarm
 
+> Alarm APIはV2の使用を推奨します。
+
 #### 1.1 Alarmを登録する
 
 **[基本情報]**
